@@ -1,6 +1,11 @@
-const REMOTE_SERVER =
-  process.env.NODE_ENV === 'development' ? 'api-staging.foracross.com' : 'api.foracross.com';
+if (process.env.NODE_ENV === 'development') {
+  const REMOTE_SERVER = 'api-staging.foracross.com'; //todo: bring this into a .env.staging file
+} else {
+  const REMOTE_SERVER = process.env.PROD_API_DOMAIN ?? 'localhost';
+}
+  
 const REMOTE_SERVER_URL = `${window.location.protocol}//${REMOTE_SERVER}`;
+
 if (window.location.protocol === 'https' && process.env.NODE_ENV === 'development') {
   throw new Error('Please use http in development');
 }
