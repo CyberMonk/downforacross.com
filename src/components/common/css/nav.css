@@ -18,6 +18,9 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  padding-right: 30px;
+  background: url(../../../images/joshmargarita.png) center right no-repeat;
+  background-size: 26px;
 }
 
 .nav.mobile .nav--left {

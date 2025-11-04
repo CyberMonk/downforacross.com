@@ -47,27 +47,11 @@ function LogIn({user, style}) {
 
 function showInfo() {
   swal({
-    title: 'downforacross.com',
+    title: 'crossword.pillarist.com',
     icon: 'info',
     content: (
       <div className="swal-text swal-text--no-margin">
-        <p>
-          Down for a Cross is an online website for sharing crosswords and playing collaboratively with
-          friends in real time. Join the&nbsp;
-          <a href="https://discord.gg/KjPHFw8" target="_blank" rel="noreferrer">
-            community Discord
-          </a>
-          &nbsp;for more discussion.
-        </p>
-        <hr className="info--hr" />
-        <p>
-          Down for a Cross is open to contributions from developers of any level or experience. For more
-          information or to report any issues, check out the project on&nbsp;
-          <a href="https://github.com/downforacross/downforacross.com" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          .
-        </p>
+        <p>Josh for a Cross is here to keep you company when all else has gone.</p>
       </div>
     ),
   });
